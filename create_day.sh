@@ -90,7 +90,7 @@ EOF
   # Patch main.go
   local search
   local adding
-  search=$(grep '//_ "github.com/knalli/aoc2020/dayXX"' main.go)
+  search=$(grep '//_ "aoc2021/dayXX"' main.go)
   adding=$(echo "$search" | sed 's/\/\///g')
   adding=$(echo "$adding" | sed -e "s/XX/$id/g")
   if [[ "$OSTYPE" == "darwin"* ]] || [[ "$OSTYPE" == "freebsd"* ]]; then

@@ -1,6 +1,7 @@
 package main
 
 import (
+	//_ "aoc2021/dayXX"
 	"errors"
 	"github.com/knalli/aoc"
 	"os"
