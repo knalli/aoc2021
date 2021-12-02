@@ -2,6 +2,7 @@ package main
 
 import (
 	_ "aoc2021/day01"
+	_ "aoc2021/day02"
 	//_ "aoc2021/dayXX"
 	"errors"
 	"github.com/knalli/aoc"
