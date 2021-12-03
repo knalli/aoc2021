@@ -4,6 +4,9 @@ import (
 	_ "aoc2021/day01"
 	_ "aoc2021/day02"
 	_ "aoc2021/day03"
+	"github.com/fatih/color"
+	"time"
+
 	//_ "aoc2021/dayXX"
 	"errors"
 	"github.com/knalli/aoc"
@@ -16,6 +19,9 @@ func init() {
 }
 
 func main() {
+	start := time.Now()
+	defer printTimeUsed(start)
+
 	if err := invoke(os.Args); err != nil {
 		aoc.PrintError(err)
 		os.Exit(1)
@@ -30,4 +36,12 @@ func invoke(args []string) error {
 	} else {
 		return err
 	}
+}
+
+//noinspection GoUnhandledErrorResult
+func printTimeUsed(start time.Time) {
+	elapsed := time.Since(start)
+	c := color.New(color.Bold, color.FgGreen)
+	c.Printf("⏱ Took: %s\n", elapsed)
+	c.Println()
 }
