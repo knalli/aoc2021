@@ -7,6 +7,7 @@ import (
 	"github.com/fatih/color"
 	"time"
 
+	_ "aoc2021/day04"
 	//_ "aoc2021/dayXX"
 	"errors"
 	"github.com/knalli/aoc"
