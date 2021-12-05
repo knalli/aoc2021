@@ -8,6 +8,7 @@ import (
 	"time"
 
 	_ "aoc2021/day04"
+	_ "aoc2021/day05"
 	//_ "aoc2021/dayXX"
 	"errors"
 	"github.com/knalli/aoc"
