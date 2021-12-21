@@ -24,6 +24,7 @@ import (
 	_ "aoc2021/day18"
 	_ "aoc2021/day19"
 	_ "aoc2021/day20"
+	_ "aoc2021/day21"
 	//_ "aoc2021/dayXX"
 	"errors"
 	"github.com/knalli/aoc"
